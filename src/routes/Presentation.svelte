@@ -1,4 +1,6 @@
-<script></script>
+<script>
+    import Style from "../params/Style.svelte";
+</script>
 
 <section id="presentation">
     <img class="mehdi" src="img/Mehdi.png" alt="" />
@@ -45,7 +47,7 @@
         flex-direction: row;
         margin-top: 80px;
         margin-bottom: 0;
-        background: url(img/marionnette.jpg);
+        background: url(img/marionnette.jpg) fixed;
     }
 
     img {
@@ -57,6 +59,12 @@
         margin: auto;
         width: 45%;
     }
+
+    h1 {
+		color: var(--primary-color);
+		text-transform: uppercase;
+		font-weight: bold;
+	}
 
     p {
         color: var(--secondary-color);

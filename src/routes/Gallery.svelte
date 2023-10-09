@@ -468,7 +468,7 @@
 
 <style>
     section {
-        background: url("img/fleece2.jpg");
+        background: url("img/fleece2.jpg") fixed;
         padding: 70px 0;
     }
 

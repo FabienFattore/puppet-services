@@ -8,11 +8,17 @@
         <a href="#methods">Méthodes</a>
     </div>
     <div class="nav-logo">
-        <img src="img/logo-puppet.png" alt="puppet services" />
+        <div class="nav-logo-full">
+            <img src="img/logo-puppet.png" alt="puppet services" />
+        </div>
+        <div class="nav-logo-small">
+            <img src="img/logo-puppet-p.png" alt="puppet services" />
+        </div>
     </div>
     <div class="nav-right">
-        <a href="#references">Références</a>
-        <a href="#contact">Contact</a>
+        <a class="references" href="#references">Références</a>
+        <a class="contact" href="#contact">Contact</a>
+        <a class="menu" href=" ">Menu</a>
     </div>
 </nav>
 
@@ -39,7 +45,19 @@
         margin: 0 2%;
     }
 
-    .nav-logo img {
+    .menu {
+        display: none;
+    }
+
+    .nav-logo-small img {
+        width: 40px;
+    }
+
+    .nav-logo-small {
+        display: none;
+    }
+
+    .nav-logo-full img {
         width: 150px;
     }
 
@@ -49,5 +67,39 @@
         font-weight: bold;
         font-size: 1.2rem;
         text-transform: uppercase;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .nav-logo-small {
+            display: block;
+        }
+
+        .nav-logo-full {
+            display: none;
+        }
+
+        .nav-left,
+        .nav-right {
+            width: 40%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .nav-logo-small {
+            margin-left: 10px;
+        }
+
+        .nav-left,
+        .references, .contact {
+            display: none;
+        }
+
+        .nav-right {
+            justify-content: end;
+        }
+
+        .menu  {
+            display: block !important;
+        }
     }
 </style>

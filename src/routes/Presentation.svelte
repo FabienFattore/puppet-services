@@ -80,4 +80,14 @@
         color: var(--primary-color);
         font-weight: bold;
     }
+
+    @media screen and (max-width: 1024px) {
+        img {
+        display: none;
+    }
+
+    .presentation-container {
+        width: 80%;
+    }
+    }
 </style>

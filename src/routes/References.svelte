@@ -60,7 +60,7 @@
     }
 
     .references-slider {
-        max-width: 30vw;
+        width: 30vw;
         height: 50vh;
         overflow: hidden;
     }
@@ -82,10 +82,10 @@
 
     @keyframes slider {
         0% {
-            left: 0px;
+            left: 0vw;
         }
         8% {
-            left: 0px;
+            left: 0vw;
         }
         16% {
             left: -30vw;
@@ -117,5 +117,66 @@
         100% {
             left: -150vw;
         }
+    }
+
+    @media screen and (max-width: 768px) {
+        section {
+            flex-direction: column;
+        }
+
+        .references-text {
+            width: 100%;
+        }
+
+        .references-slider-content {
+            width: 600vw;
+        }
+
+        .references-slider {
+            width: 100vw;
+        }
+
+        img {
+            width: 100vw;
+        }
+        
+        @keyframes slider {
+        0% {
+            left: 0vw;
+        }
+        8% {
+            left: 0vw;
+        }
+        16% {
+            left: -100vw;
+        }
+        24% {
+            left: -100vw;
+        }
+        32% {
+            left: -200vw;
+        }
+        40% {
+            left: -200vw;
+        }
+        48% {
+            left: -300vw;
+        }
+        56% {
+            left: -300vw;
+        }
+        64% {
+            left: -400vw;
+        }
+        72% {
+            left: -400vw;
+        }
+        80% {
+            left: -500vw;
+        }
+        100% {
+            left: -500vw;
+        }
+    }
     }
 </style>

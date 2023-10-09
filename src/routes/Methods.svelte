@@ -38,9 +38,7 @@
             >
         </p>
         <div class="methods-youtube">
-            <iframe
-                width="889"
-                height="500"
+            <iframe 
                 src="https://www.youtube.com/embed/T0W-BATWEN0?si=O6U2TbdIdZ9i8Uc3"
                 title="YouTube video player"
                 frameborder="0"
@@ -84,6 +82,28 @@
     }
 
     .methods-youtube {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80vw;
         margin: 5% auto;
+    }
+
+    iframe {  
+        width: 800px;
+        height: 450px;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        .methods-container {
+            width: 80vw;
+        } 
+
+        iframe {  
+        width: 600px;
+        height: 330px;
+    }
+
     }
 </style>

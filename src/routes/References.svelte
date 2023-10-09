@@ -70,7 +70,7 @@
         height: 50vw;
         position: relative;
         animation-name: slider;
-        animation-duration: 10s;
+        animation-duration: 30s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
     }

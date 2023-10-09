@@ -62,7 +62,7 @@
     }
 
     section {
-        padding: 50px 0;
+        padding: 70px 0;
         background: url(img/covernb.jpg) fixed;
         background-size: cover;
         width: 100%;

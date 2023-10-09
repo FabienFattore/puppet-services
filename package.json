@@ -23,5 +23,8 @@
   "main": "svelte.config.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.4.0"
+  }
 }

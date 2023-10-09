@@ -3,6 +3,8 @@
     import Presentation from "./Presentation.svelte";
     import Methods from "./Methods.svelte";
     import References from "./References.svelte";
+    import GalleryTest from "./Gallery.svelte";
+    import Gallery from "./Gallery.svelte";
 </script>
 
 <body>
@@ -10,4 +12,5 @@
     <Presentation />
     <Methods />
     <References/>
+    <Gallery/>
 </body>

@@ -74,6 +74,13 @@
         font-weight: bold;
         font-size: 1.2rem;
         text-transform: uppercase;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        scale: 1.1;
+        text-decoration: underline;
+        transition: 0.5s;
     }
 
     /* Mobile */
@@ -90,8 +97,8 @@
 
     .main-pages {
         position: fixed;
-        top: 80px;
-        right: 10px;
+        top: 79px;
+        right: 0px;
         background: var(--blur-color);
         backdrop-filter: blur(10px);
         padding: 10px;

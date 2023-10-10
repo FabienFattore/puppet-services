@@ -6,6 +6,7 @@
     import Gallery from "./Gallery.svelte";
     import Contact from "./Contact.svelte";
     import Footer from "./Footer.svelte";
+    import CustomMade from "./CustomMade.svelte";
 </script>
 
 <body>
@@ -14,6 +15,7 @@
     <Methods/>
     <References/>
     <Gallery/>
+    <CustomMade/>
     <Contact/>
     <Footer/>
 </body>

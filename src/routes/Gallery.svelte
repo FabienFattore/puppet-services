@@ -516,6 +516,10 @@
         .gallery-container {
             width: 85%;
         }
+
+        .references-item {
+            width: 45%;
+        }
     }
 
     @media screen and (max-width: 768px) {

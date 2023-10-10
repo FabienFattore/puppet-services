@@ -511,4 +511,22 @@
     p {
         color: var(--secondary-color);
     }
+
+    @media screen and (max-width: 1024px) {
+        .gallery-container {
+            width: 85%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .gallery-container {
+            width: 95%;
+            justify-content: center;
+        }
+
+        .references-item {
+            width: 90%;
+        }
+    }
 </style>

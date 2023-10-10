@@ -1,5 +1,4 @@
 <script>
-    import Style from "../params/Style.svelte";
 </script>
 
 <nav>
@@ -9,16 +8,28 @@
     </div>
     <div class="nav-logo">
         <div class="nav-logo-full">
-            <img src="img/logo-puppet.png" alt="puppet services" />
+            <a href="#presentation"
+                ><img src="img/logo-puppet.png" alt="puppet services" /></a
+            >
         </div>
         <div class="nav-logo-small">
-            <img src="img/logo-puppet-p.png" alt="puppet services" />
+            <a href="#presentation"
+                ><img src="img/logo-puppet-p.png" alt="puppet services" /></a
+            >
         </div>
     </div>
     <div class="nav-right">
         <a class="references" href="#references">Références</a>
         <a class="contact" href="#contact">Contact</a>
-        <a class="menu" href=" ">Menu</a>
+    </div>
+    <!-- Mobile -->
+    <label for="toggle">Menu</label>
+    <input type="checkbox" id="toggle">
+    <div class="main-pages">
+        <a href="#presentation">Présentation</a>
+        <a href="#methods">Méthodes</a>
+        <a href="#references">Références</a>
+        <a href="#contact">Contact</a>
     </div>
 </nav>
 
@@ -45,10 +56,6 @@
         margin: 0 2%;
     }
 
-    .menu {
-        display: none;
-    }
-
     .nav-logo-small img {
         width: 40px;
     }
@@ -68,6 +75,34 @@
         font-size: 1.2rem;
         text-transform: uppercase;
     }
+
+    /* Mobile */
+
+    label, #toggle {
+        position: fixed;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        right: 10px;
+        display: none;
+    }
+
+    .main-pages {
+        position: fixed;
+        top: 80px;
+        right: 10px;
+        background: var(--blur-color);
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        display: none;
+    }
+
+    #toggle:checked + .main-pages {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     @media screen and (max-width: 1024px) {
         .nav-logo-small {
@@ -90,7 +125,8 @@
         }
 
         .nav-left,
-        .references, .contact {
+        .references,
+        .contact {
             display: none;
         }
 
@@ -98,8 +134,8 @@
             justify-content: end;
         }
 
-        .menu  {
-            display: block !important;
+        label {
+            display: block;
         }
     }
 </style>

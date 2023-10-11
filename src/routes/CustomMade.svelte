@@ -2,9 +2,8 @@
 
 <section>
     <div class="custom-container">
-        <div class="custom-img">
-            <img src="gallery/surmesure.jpg" alt="puppet services sur mesure" />
-        </div>
+        <img src="gallery/surmesure.jpg" alt="puppet services sur mesure" />
+
         <div class="custom-info">
             <h2>Garantie</h2>
             <p>
@@ -35,25 +34,31 @@
                 nouveau modèle dans notre gamme.
             </p>
             <h2>Temps de fabrication</h2>
-            <p>Le temps de fabrication d’une marionnette est variable en fonction de
-            notre activité et de la marionnette en question. Pour une nouvelle marionnette,
-            5 à 6 semaines en moyenne sont nécessaires. Pour une marionnette provenant
-            de la gamme, 2 à 3 semaines en moyenne.</p> 
-            <h2>Pour information</h2> 
-            <p>La fabrication
-            de marionnettes est une activité artisanale. Chacune d’elle est faite
-            avec minutie : les têtes sont cousues à la main pour rendre les coutures
-            les plus discrètes possible, les yeux sont fixés avec attention pour
-            que le regard soit expressif, un aménagement est prévu dans la tête pour
-            que la main du marionnettiste soit bien fixée et ainsi faciliter la manipulation.
-            Nos marionnettes étant faites à la main, chacune d’elles présente ses
-            propres particularités la rendant unique. Il pourra donc y avoir de légères
-            différences, très minimes, sur des marionnettes représentant le même
-            personnage. De plus les vêtements présentés sur les photos sont à titre
-            indicatif, car ils ne seront peut être plus disponibles lors de la confection
-            du personnage. Nous vous fournirons alors des vêtements comparables.
-            Pour obtenir des marionnettes les plus identiques possible, il est donc
-            préférable de les commander en même temps.</p> 
+            <p>
+                Le temps de fabrication d’une marionnette est variable en
+                fonction de notre activité et de la marionnette en question.
+                Pour une nouvelle marionnette, 5 à 6 semaines en moyenne sont
+                nécessaires. Pour une marionnette provenant de la gamme, 2 à 3
+                semaines en moyenne.
+            </p>
+            <h2>Pour information</h2>
+            <p>
+                La fabrication de marionnettes est une activité artisanale.
+                Chacune d’elle est faite avec minutie : les têtes sont cousues à
+                la main pour rendre les coutures les plus discrètes possible,
+                les yeux sont fixés avec attention pour que le regard soit
+                expressif, un aménagement est prévu dans la tête pour que la
+                main du marionnettiste soit bien fixée et ainsi faciliter la
+                manipulation. Nos marionnettes étant faites à la main, chacune
+                d’elles présente ses propres particularités la rendant unique.
+                Il pourra donc y avoir de légères différences, très minimes, sur
+                des marionnettes représentant le même personnage. De plus les
+                vêtements présentés sur les photos sont à titre indicatif, car
+                ils ne seront peut être plus disponibles lors de la confection
+                du personnage. Nous vous fournirons alors des vêtements
+                comparables. Pour obtenir des marionnettes les plus identiques
+                possible, il est donc préférable de les commander en même temps.
+            </p>
         </div>
     </div>
 </section>
@@ -71,16 +76,6 @@
         height: 50vh;
     }
 
-    .custom-img {
-        width: 20%;
-        height: 50vh;
-    }
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-
     .custom-info {
         background: rgb(88, 88, 88);
         background: radial-gradient(
@@ -89,8 +84,6 @@
             rgba(40, 40, 40, 1) 100%
         );
         overflow: auto;
-        width: 80%;
-        height: 50vh;
         text-align: justify;
     }
 
@@ -105,4 +98,12 @@
         text-transform: uppercase;
     }
 
+    @media screen and (max-width: 768px) {
+
+        .custom-container {
+            flex-direction: column;
+            height: 100vh;
+        }
+
+    }
 </style>

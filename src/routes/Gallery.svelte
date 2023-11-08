@@ -76,7 +76,7 @@
         <div class="references-item">
             <a
                 target="_blank"
-                href="https://www.youtube.com/watch?v=odNqXCkqe4A"
+                href="https://www.youtube.com/watch?v=cSy9VXFaZpE"
                 ><img
                     src="gallery/winnie.png"
                     alt="Puppet Services Winnie l'ourson et le coffre auw merveilles"
@@ -99,7 +99,7 @@
                 target="_blank"
                 href="https://www.youtube.com/watch?v=3402RA4dlNM"
                 ><img
-                    src="gallery/extracurieux.png"
+                    src="gallery/extracurieux-3.png"
                     alt="Puppet Services Les extra curieux saison 1"
                 /></a
             >

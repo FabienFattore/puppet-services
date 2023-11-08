@@ -32,11 +32,12 @@
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
+        height: 575px;
     }
 
     .slider-container {
         width: 30vw;
-        height: 50vh;
+        height: 575px;
     }
 
     .references-text {
@@ -52,22 +53,19 @@
             rgba(40, 40, 40, 1) 100%
         );
         width: 70vw;
-        height: 50vh;
     }
 
     h1 {
         text-transform: uppercase;
     }
 
-    .references-slider {
-        width: 30vw;
-        height: 50vh;
+    .references-slider {        
         overflow: hidden;
     }
 
     .references-slider-content {
         width: 180vw;
-        height: 50vw;
+        height: 575px;
         position: relative;
         animation-name: slider;
         animation-duration: 30s;
@@ -77,7 +75,7 @@
 
     img {
         width: 30vw;
-        height: 50vh;
+        
     }
 
     @keyframes slider {

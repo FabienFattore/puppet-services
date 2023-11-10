@@ -31,13 +31,10 @@
     section {
         display: flex;
         flex-direction: row-reverse;
-        width: 100%;
-        height: 575px;
     }
 
     .slider-container {
-        width: 30vw;
-        height: 575px;
+        width: 30%;
     }
 
     .references-text {
@@ -52,20 +49,19 @@
             rgba(88, 88, 88, 1) 0%,
             rgba(40, 40, 40, 1) 100%
         );
-        width: 70vw;
+        width: 100%;
     }
 
     h1 {
         text-transform: uppercase;
     }
 
-    .references-slider {        
+    .references-slider {
         overflow: hidden;
     }
 
     .references-slider-content {
         width: 180vw;
-        height: 575px;
         position: relative;
         animation-name: slider;
         animation-duration: 30s;
@@ -75,7 +71,6 @@
 
     img {
         width: 30vw;
-        
     }
 
     @keyframes slider {
@@ -137,44 +132,44 @@
         img {
             width: 100vw;
         }
-        
+
         @keyframes slider {
-        0% {
-            left: 0vw;
+            0% {
+                left: 0vw;
+            }
+            8% {
+                left: 0vw;
+            }
+            16% {
+                left: -100vw;
+            }
+            24% {
+                left: -100vw;
+            }
+            32% {
+                left: -200vw;
+            }
+            40% {
+                left: -200vw;
+            }
+            48% {
+                left: -300vw;
+            }
+            56% {
+                left: -300vw;
+            }
+            64% {
+                left: -400vw;
+            }
+            72% {
+                left: -400vw;
+            }
+            80% {
+                left: -500vw;
+            }
+            100% {
+                left: -500vw;
+            }
         }
-        8% {
-            left: 0vw;
-        }
-        16% {
-            left: -100vw;
-        }
-        24% {
-            left: -100vw;
-        }
-        32% {
-            left: -200vw;
-        }
-        40% {
-            left: -200vw;
-        }
-        48% {
-            left: -300vw;
-        }
-        56% {
-            left: -300vw;
-        }
-        64% {
-            left: -400vw;
-        }
-        72% {
-            left: -400vw;
-        }
-        80% {
-            left: -500vw;
-        }
-        100% {
-            left: -500vw;
-        }
-    }
     }
 </style>
